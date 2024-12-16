@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyChat</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration token: %s</string>
+    <string name="api_path">https://script.googleusercontent.com/macros/echo?user_content_key=IMXy8eGl-OXc6fEJhQnkKP7_PjUCtJn0ebrM-rr-wd3P874F4B82J8D4EbLo3vP586ZjQWGKt-5O2h_UnHV0tn2RqUWVf68em5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnDy0kryj48GafFZQmt71kbJ_pPLHROfV1GedGhENxoLjCBfSb-mvdsP4NjEoAWiFjw&amp;lib=MiZmwvgX2SbdDP315vxGcJoVADVuiKNwz</string>
+    <string name="api_path2">https://umayadia-apisample.azurewebsites.net/api/management</string>
+    <string name="header">MyChat</string>
+    <string name="device_token">デバイストークン</string>
+    <string name="hogehogehogehoge">hogehogehogehoge</string>
+    <string name="setting">Setting</string>
+</resources>

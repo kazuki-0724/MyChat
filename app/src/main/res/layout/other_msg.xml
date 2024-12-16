@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample"
+        android:paddingVertical="3sp"
+        android:paddingHorizontal="10sp"
+        android:textSize="20sp"
+        android:background="@drawable/frame_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="2023/08/06"
+        android:layout_marginLeft="5dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+</LinearLayout>
