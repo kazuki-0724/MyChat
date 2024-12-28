@@ -87,8 +87,8 @@ public class FcmUtil {
     public static String[] getDeviceTokensFromGAS(){
         /** デバイストークン群 */
         String[] tokens = { //kyyのほうがNothing
-                "cURc-kyyR0-QFTk_cWHWkW:APA91bFTsdfw-ca0yBRXkbq_kn4M2uj6HApRllZpyhY1whW_k9H6TkSe6bzsd5FdzoO8jxrBsTzgKWoCIqiKDcdjeSN8oQBnyGK2E6ZWpYsqVPMQCihaXCk",
-                "cd5IQE3aTdCkm_t9uKPaIY:APA91bGTongEQMZUYX31YIoHHptRyu6HWbMEJKUFa4TNA99otacXfSKTFxdAY969ffcfv_g4DC8JiVzwAk-8XXpEm2fvjUxPabQTgJQ_cbMvEQ2BHTAiPxo"
+                "cURc-kyyR0-QFTk_cWHWkW:APA91bGAcLiA-e-OcR6iiv_QhFNJkm0KWHQgTYuMqMfh-_eCF26WXGlNBoLm_FA07WnGIOq9GGwnINBS-Am957N8XYp1HQ3ZlrfQHZriut03w6MJZHGMLcQ",
+                "cd5IQE3aTdCkm_t9uKPaIY:APA91bFL1xKrL51W6YLqYbQ_ufWsbwZc3o1nvd5CdG-9ud6jPZ9ChItWGZxwh9BOf091UbdaoRpCYd7bKFqp-Tx77VZk_EmZaCYpiG7FT8e4jHt90kUKqN8"
         };
         return tokens;
     }
