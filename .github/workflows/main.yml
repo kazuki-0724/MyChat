@@ -1,0 +1,25 @@
+name: Generate Javadoc
+
+on: workflow_dispatch
+
+jobs:
+  generate-javadoc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'adoptopenjdk'
+
+      - name: Generate Javadoc
+        run: ./gradlew javadoc
+
+      - name: Upload Javadoc artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: javadoc
+          path: app/build/docs/javadoc
