@@ -1,7 +1,6 @@
 name: Generate Javadoc
 
-on: [push]
-workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   generate-javadoc:
