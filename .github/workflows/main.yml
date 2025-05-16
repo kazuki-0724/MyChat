@@ -1,0 +1,27 @@
+name: Generate Javadoc
+
+on: [push]
+workflow_dispatch:
+
+jobs:
+  generate-javadoc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17' # 使用するJavaのバージョンに合わせてください
+          distribution: 'adoptopenjdk'
+
+      - name: Generate Javadoc
+        run: |
+          cd src/main/java # ソースコードのディレクトリに合わせてください
+          javadoc -d javadoc .
+
+      - name: Upload Javadoc artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: javadoc
