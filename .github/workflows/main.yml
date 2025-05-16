@@ -12,15 +12,14 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '17' # 使用するJavaのバージョンに合わせてください
+          java-version: '17'
           distribution: 'adoptopenjdk'
 
       - name: Generate Javadoc
-        run: |
-          cd src/main/java # ソースコードのディレクトリに合わせてください
-          javadoc -d javadoc .
+        run: ./gradlew javadoc
 
       - name: Upload Javadoc artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: javadoc
+          name: javadoc
+          path: app/build/docs/javadoc
